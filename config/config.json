@@ -1,0 +1,17 @@
+ {
+	 "devices":{
+	  "10.0A3436010800": {
+	    "type": "sensor",
+	    "name": "Probe 1"
+	  },
+	  "10.163536010800": {
+	    "type": "sensor",
+	    "name": "Probe 2"
+	  } 
+	 },
+	 "ow": {
+	   "bin": "/usr/local/owfs/bin",
+	   "args": " -u ",
+           "server": " localhost "
+	 }
+ }
