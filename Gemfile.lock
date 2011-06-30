@@ -1,10 +1,12 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    gnuplot (2.3.6)
     json (1.5.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  gnuplot
   json
