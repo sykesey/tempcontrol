@@ -16,5 +16,37 @@ def read_device_type(id)
 end
 
 def read_device(id,param)
-  `#{CONFIG["ow"]["bin"]}/owread -s #{CONFIG["ow"]["server"]} /#{id}/#{param}`.gsub(/\s/,'')
+  val = `#{CONFIG["ow"]["bin"]}/owread -s #{CONFIG["ow"]["server"]} /#{id}/#{param}`.gsub(/\s/,'')
+  return -1 if val.nil?
+  return val
 end
+
+class Device
+  attr_accessor :name, :id
+  
+  def get_device_parameter (param)
+    read_device @id, param
+  end
+  
+  def initialize (id)
+    @id = id
+  end
+
+end
+
+class Device::TempSensor < Device
+  
+  def temperature
+    read_device_temperature(@id)
+  end
+  
+end
+
+class Device::GPIO < Device
+  attr_accessor :num_pins
+end
+
+class Device::ADC < Device
+  attr_accessor :num_pins
+end
+

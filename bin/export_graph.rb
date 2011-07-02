@@ -1,6 +1,6 @@
-#!/opt/local/bin/ruby
+#!/usr/bin/ruby
 
-require 'lib/bootstrap.rb'
+require '../lib/bootstrap.rb'
 
 require 'gnuplot'
 
@@ -9,12 +9,12 @@ x2 = []
 y1 = []
 y2 = []
 
-Temperature.where(:probe_name => "Probe 1").each do |row|
+Database::Temperature.where(:probe_name => "Probe 1").each do |row|
  x1 << row.tstamp.strftime("%d-%m-%Y-%H:%M")
  y1 << row.value
 end
 
-Temperature.where(:probe_name => "Probe 2").each do |row|
+Database::Temperature.where(:probe_name => "Probe 2").each do |row|
  x2 << row.tstamp.strftime("%d-%m-%Y-%H:%M")
  y2 << row.value
 end
