@@ -1,12 +1,6 @@
 #!/opt/local/bin/ruby
 
-require 'rubygems'
-require 'json'
-require 'pp'
-
-require 'lib/config.rb'
-require 'lib/device.rb'
-require 'lib/database.rb'
+require 'lib/bootstrap.rb'
 
 
 def get_temperatures
