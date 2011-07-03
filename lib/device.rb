@@ -28,8 +28,13 @@ class Device
     read_device @id, param
   end
   
-  def initialize (id)
+  def initialize (id,name)
     @id = id
+    @name = name
+  end
+  
+  def hardware_type
+    read_device_type @id
   end
 
 end
@@ -37,7 +42,9 @@ end
 class Device::TempSensor < Device
   
   def temperature
-    read_device_temperature(@id)
+    @temperature = read_device_temperature(@id)
+    warn "No temperature returned - is owserver running?" if @temperature == ""
+    return @temperature
   end
   
 end

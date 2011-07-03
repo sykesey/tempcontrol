@@ -3,15 +3,11 @@
 require '../lib/bootstrap.rb'
 
 
-def get_temperatures
-	CONFIG["devices"].each do |id,opts|
-          if opts["type"].include?("TempSensor") then
-		  sensor = Device::TempSensor.new(id)
-		  probe_temp = sensor.temperature
-                  warn "No probe temp returned - is owserver running?" if probe_temp == ""
-		  puts "#{opts["name"]}: #{ read_device_type id } #{ probe_temp }"
-                  save_temp id, opts["name"], probe_temp unless probe_temp == ""
-          end
+def get_temperatures (sensors)
+	sensors.each do |sensor|
+		probe_temp = sensor.temperature
+		puts "#{sensor.name}: #{ sensor.hardware_type } #{ probe_temp }"
+                save_temp sensor.id, sensor.name, probe_temp unless probe_temp == ""
 	end
 end
 
@@ -23,10 +19,18 @@ def save_temp (id,name,value)
 end
 
 def main
-  while true
-   get_temperatures
-   sleep 60
-  end
+	
+	sensors = []
+	CONFIG["devices"].each do |id,opts|
+		if opts["type"].include?("TempSensor") then
+			 sensor = Device::TempSensor.new(id,opts["name"])
+			 sensors << sensor
+		end
+	end
+	while true
+		get_temperatures sensors
+		sleep 60
+	end
 end
 
 main

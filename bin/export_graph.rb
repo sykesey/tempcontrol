@@ -8,6 +8,8 @@ x1 = []
 x2 = []
 y1 = []
 y2 = []
+x3 = []
+y3 = []
 
 Database::Temperature.where(:probe_name => "Probe 1").each do |row|
  x1 << row.tstamp.strftime("%d-%m-%Y-%H:%M")
@@ -17,6 +19,11 @@ end
 Database::Temperature.where(:probe_name => "Probe 2").each do |row|
  x2 << row.tstamp.strftime("%d-%m-%Y-%H:%M")
  y2 << row.value
+end
+
+Database::Temperature.where(:probe_name => "Probe 3").each do |row|
+ x3 << row.tstamp.strftime("%d-%m-%Y-%H:%M")
+ y3 << row.value
 end
 
 
@@ -44,6 +51,12 @@ Gnuplot.open do |gp|
               ds2.linewidth = 1
               ds2.using = "1:2"
               ds2.title = "Probe 2"
+            },
+            Gnuplot::DataSet.new( [x3, y3] ) { |ds3|
+              ds3.with = "linespoints"
+              ds3.linewidth = 1
+              ds3.using = "1:2"
+              ds3.title = "Probe 3"
             }
     ]
   end

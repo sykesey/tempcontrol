@@ -1,17 +1,21 @@
  {
 	 "devices":{
-	  "10.0A3436010800": {
+	  "10.163536010800": {
 	    "type": ["TempSensor"],
 	    "name": "Probe 1"
 	  },
-	  "10.163536010800": {
+	  "10.0A3436010800": {
 	    "type": ["TempSensor"],
 	    "name": "Probe 2"
+	  },
+	  "10.4D9241010800": {
+	    "type": ["TempSensor"],
+	    "name": "Probe 3"
 	  } 
 	 },
 	 "ow": {
 	   "bin": "/opt/owfs/bin",
-	   "args": " -u ",
+	   "args": " -uall ",
            "server": " localhost "
 	 }
  }
