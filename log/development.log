@@ -1330,3 +1330,32 @@ Started GET "/" for 127.0.0.1 at Mon Jul 04 21:16:59 +1000 2011
   [1m[36mTemperatures Load (5.1ms)[0m  [1mSELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 2' ORDER BY tstamp DESC LIMIT 1 OFFSET 5[0m
 Rendered dashboard/index.html.erb within layouts/application (2.7ms)
 Completed 200 OK in 166ms (Views: 9.6ms | ActiveRecord: 35.7ms)
+  [1m[36mSQL (58.7ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (647.4ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (38.9ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (369.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (32.8ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (192.6ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (37.3ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (206.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.9ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateTemperatures (20110703230421)
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.9ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateTemperatures (20110703230421)
+  [1m[35mSQL (199.2ms)[0m  CREATE TABLE `temperatures` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `probe_name` varchar(255), `probe_id` varchar(255), `value` decimal(10,4), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (30.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110703230421')[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (2.8ms)[0m  [1mdescribe `temperatures`[0m
+  [1m[35mSQL (2.3ms)[0m  SHOW KEYS FROM `temperatures`

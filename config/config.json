@@ -13,6 +13,28 @@
 	    "name": "Probe 3"
 	  } 
 	 },
+	 "zones":
+	 {
+		"hlt":
+		{
+			"sensor": "10.163536010800",
+			"manage": true,
+			"default_target_temp": 72,
+			"valves": ["mashtun"]
+		},
+		"mashtun":
+		{
+			"sensor": "10.0A3436010800",
+			"manage": true,
+			"default_target_temp": 65,
+			"valves": ["kettle"]
+		},
+		"ambient":
+		{
+			"sensor": "10.4D9241010800",
+			"manage": false
+		}
+	 },
 	 "ow": {
 	   "bin": "/usr/local/owfs/bin",
 	   "args": " -uall ",

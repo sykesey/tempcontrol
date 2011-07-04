@@ -53,7 +53,13 @@ class Device::GPIO < Device
   attr_accessor :num_pins
 end
 
+class Device::GPIO::Pin < Device
+  attr_accessor :parent, :io_type
+  #:parent => id of parent GPIO device
+  #:io_type => input or output
+end
+
 class Device::ADC < Device
-  attr_accessor :num_pins
+  attr_accessor :num_pins, :input_voltage_range
 end
 

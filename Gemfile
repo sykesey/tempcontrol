@@ -1,8 +1,8 @@
-source 'http://rubygems.org'
+source :rubygems
 
 gem 'rails', '3.0.5'
 
-gem 'mysql2'
+gem 'mysql2', '0.2.7'
 gem 'hashie'
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
@@ -15,6 +15,16 @@ gem 'json'
 gem 'gnuplot'
 gem 'activesupport'
 gem 'hashie'
+
+group :development, :test, :cucumber do
+	gem 'cucumber'
+	gem 'rspec'
+	gem 'cucumber-rails'
+        gem 'database_cleaner'
+	gem 'capybara'
+        gem 'launchy'
+        gem 'spork'
+end
 
 # group :development, :test do
 #   gem 'webrat'
