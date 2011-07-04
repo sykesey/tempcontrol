@@ -2,7 +2,6 @@ temperature control for brewing using owfs and DS18S20's
 
 TODO:
 
-- Merge rails app with the main codebase to clean up configs/gemfiles etc
 - Process failure control (don't overflow vessels or burn elements!)
 - Add in control of GPIO boards etc
 - Add in mash schedule and general control (define in JSON for the moment)
