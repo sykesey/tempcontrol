@@ -1,12 +1,18 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    activesupport (3.0.5)
     gnuplot (2.3.6)
+    hashie (1.0.0)
     json (1.5.3)
+    mysql2 (0.2.6)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport
   gnuplot
+  hashie
   json
+  mysql2
