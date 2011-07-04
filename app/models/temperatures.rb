@@ -1,12 +1,17 @@
 class Temperatures < ActiveRecord::Base
   
-  #class method?
   def self.last_probe_temps
-    temps = {}
-    temps["probe_1"] = Temperatures.where(:probe_name => "Probe 1").last
-    temps["probe_2"] = Temperatures.where(:probe_name => "Probe 2").last
-    temps["probe_3"] = Temperatures.where(:probe_name => "Probe 3").last
+    temps = Hash.new { |h, k| h[k] = Hash.new(0) }
+    probes = Temperatures.find(:all, :select => "probe_name", :group => "probe_name")
+    probes.each do |row|
+      name = row.probe_name
+      temps[name]["current"] = Temperatures.where(:probe_name => name).order("tstamp DESC").first.value
+      temps[name]["fivemin"] = Temperatures.where(:probe_name => name).order("tstamp DESC").limit(1).offset(5).first.value
+      temps[name]["deltafive"] = temps[name]["current"] - temps[name]["fivemin"]
+    end
     return temps
   end
+  
+  
   
 end

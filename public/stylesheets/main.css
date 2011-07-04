@@ -38,3 +38,23 @@ div{
   font-size: 30px;
   font-weight: bold;
 }
+
+.temp_delta
+{
+  font-size: 30px;
+  font-weight: bold;  
+}
+
+.temp_delta.up
+{
+  color: #f00;
+}
+
+.temp_delta.down
+{
+  color: #0f0;
+}
+.temp_delta.flat
+{
+  color: #88f;
+}

@@ -1,6 +1,7 @@
 #!/usr/bin/ruby
 
-require '../lib/bootstrap.rb'
+require File.dirname(__FILE__) + "/../config/application"
+Rails.application.require_environment!
 
 
 def get_temperatures (sensors)

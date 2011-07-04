@@ -14,7 +14,7 @@
 	  } 
 	 },
 	 "ow": {
-	   "bin": "/opt/owfs/bin",
+	   "bin": "/usr/local/owfs/bin",
 	   "args": " -uall ",
            "server": " localhost "
 	 }
