@@ -1,0 +1,26 @@
+<div class="zone" id="hlt">
+  HLT
+  <div class="temp" id="temp_probe_1">
+    Last Temp:<br/>
+    <span class="temp_value"><%= @last_temperature["probe_1"].value %></span>
+  </div>
+</div>
+<div class="zone" id="mashtun">
+  Mash Tun
+  <div class="temp" id="temp_probe_2">
+    Last Temp:<br/>
+    <span class="temp_value"><%= @last_temperature["probe_2"].value %> </span>
+  </div>
+</div>
+<div class="zone" id="ambient">
+  Ambient<br/>
+  <div class="temp" id="temp_probe_3">
+    Last Temp:<br/>
+   <span class="temp_value"> n/a</span>
+  </div>
+</div>
+<br style="clear:both;"/>
+<div id="stage">
+  Current stage: inactive
+</div>
+</body>
