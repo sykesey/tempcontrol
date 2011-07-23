@@ -1359,3 +1359,201 @@ Migrating to CreateTemperatures (20110703230421)
   [1m[35mSQL (0.4ms)[0m  SHOW TABLES
   [1m[36mSQL (2.8ms)[0m  [1mdescribe `temperatures`[0m
   [1m[35mSQL (2.3ms)[0m  SHOW KEYS FROM `temperatures`
+  [1m[36mSQL (41.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mTemperatures Load (0.5ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 1'
+  [1m[36mTemperatures Load (0.3ms)[0m  [1mSELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 2'[0m
+  [1m[35mTemperatures Load (0.2ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 3'
+  [1m[36mSQL (106.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mTemperatures Load (5.6ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 1' LIMIT 100
+  [1m[36mTemperatures Load (0.4ms)[0m  [1mSELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 2' LIMIT 100[0m
+  [1m[36mSQL (49.1ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mTemperatures Load (0.5ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 1' LIMIT 100
+  [1m[36mTemperatures Load (0.3ms)[0m  [1mSELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 2' LIMIT 100[0m
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:23:48 +1000 2011
+  Processing by DashboardController#index as HTML
+  [1m[36mTemperatures Load (65.2ms)[0m  [1mSELECT probe_name FROM `temperatures` GROUP BY probe_name[0m
+Rendered dashboard/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 179ms (Views: 76.2ms | ActiveRecord: 65.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:34:16 +1000 2011
+  Processing by DashboardController#index as HTML
+  [1m[36mTemperatures Load (0.6ms)[0m  [1mSELECT probe_name FROM `temperatures` GROUP BY probe_name[0m
+Rendered dashboard/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 37ms (Views: 9.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:34:22 +1000 2011
+  Processing by DashboardController#index as HTML
+  [1m[35mTemperatures Load (0.4ms)[0m  SELECT probe_name FROM `temperatures` GROUP BY probe_name
+Rendered dashboard/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 15ms (Views: 8.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:34:22 +1000 2011
+  Processing by DashboardController#index as HTML
+  [1m[36mTemperatures Load (0.5ms)[0m  [1mSELECT probe_name FROM `temperatures` GROUP BY probe_name[0m
+Rendered dashboard/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 15ms (Views: 9.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:34:54 +1000 2011
+  Processing by DashboardController#index as HTML
+  [1m[35mTemperatures Load (0.6ms)[0m  SELECT probe_name FROM `temperatures` GROUP BY probe_name
+Rendered dashboard/index.html.erb within layouts/application (4.3ms)
+Completed   in 16ms
+
+ActionView::Template::Error (undefined method `capitalize' for #<Hash:0x1036b0ce8>):
+    1: <% @zones.each do  |id,zone| %>
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= zone.capitalize %>
+    4:   <div class="temp" id="temp_probe_<%= id %>">
+    5:     Last Temp:
+    6:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+  app/views/dashboard/index.html.erb:3:in `_app_views_dashboard_index_html_erb___1355500632_2176435920_0'
+  app/views/dashboard/index.html.erb:1:in `each'
+  app/views/dashboard/index.html.erb:1:in `_app_views_dashboard_index_html_erb___1355500632_2176435920_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:34:55 +1000 2011
+  Processing by DashboardController#index as HTML
+  [1m[36mTemperatures Load (0.5ms)[0m  [1mSELECT probe_name FROM `temperatures` GROUP BY probe_name[0m
+Rendered dashboard/index.html.erb within layouts/application (1.2ms)
+Completed   in 16ms
+
+ActionView::Template::Error (undefined method `capitalize' for #<Hash:0x1036b0ce8>):
+    1: <% @zones.each do  |id,zone| %>
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= zone.capitalize %>
+    4:   <div class="temp" id="temp_probe_<%= id %>">
+    5:     Last Temp:
+    6:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+  app/views/dashboard/index.html.erb:3:in `_app_views_dashboard_index_html_erb___1355500632_2178865340_0'
+  app/views/dashboard/index.html.erb:1:in `each'
+  app/views/dashboard/index.html.erb:1:in `_app_views_dashboard_index_html_erb___1355500632_2178865340_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:35:34 +1000 2011
+  Processing by DashboardController#index as HTML
+  [1m[35mTemperatures Load (0.5ms)[0m  SELECT probe_name FROM `temperatures` GROUP BY probe_name
+Rendered dashboard/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 15ms (Views: 8.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:36:46 +1000 2011
+  Processing by DashboardController#index as HTML
+  [1m[36mTemperatures Load (0.6ms)[0m  [1mSELECT probe_name FROM `temperatures` GROUP BY probe_name[0m
+Rendered dashboard/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 43ms (Views: 10.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:37:25 +1000 2011
+  Processing by DashboardController#index as HTML
+  [1m[35mTemperatures Load (0.5ms)[0m  SELECT probe_name FROM `temperatures` GROUP BY probe_name
+Rendered dashboard/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 15ms (Views: 9.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:51:50 +1000 2011
+  Processing by DashboardController#index as HTML
+  [1m[36mTemperatures Load (0.6ms)[0m  [1mSELECT probe_name FROM `temperatures` GROUP BY probe_name[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mTemperatures Load (0.5ms)[0m  [1mSELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 1' ORDER BY tstamp DESC LIMIT 1[0m
+Mysql2::Error: Unknown column 'tstamp' in 'order clause': SELECT  `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 1' ORDER BY tstamp DESC LIMIT 1
+Completed   in 54ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'tstamp' in 'order clause': SELECT  `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 1' ORDER BY tstamp DESC LIMIT 1):
+  app/models/temperatures.rb:8:in `last_probe_temps'
+  app/models/temperatures.rb:6:in `each'
+  app/models/temperatures.rb:6:in `last_probe_temps'
+  app/controllers/dashboard_controller.rb:5:in `index'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:51:53 +1000 2011
+  Processing by DashboardController#index as HTML
+  [1m[35mTemperatures Load (0.5ms)[0m  SELECT probe_name FROM `temperatures` GROUP BY probe_name
+  [1m[36mTemperatures Load (0.7ms)[0m  [1mSELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 1' ORDER BY tstamp DESC LIMIT 1[0m
+Mysql2::Error: Unknown column 'tstamp' in 'order clause': SELECT  `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 1' ORDER BY tstamp DESC LIMIT 1
+Completed   in 63ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'tstamp' in 'order clause': SELECT  `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 1' ORDER BY tstamp DESC LIMIT 1):
+  app/models/temperatures.rb:8:in `last_probe_temps'
+  app/models/temperatures.rb:6:in `each'
+  app/models/temperatures.rb:6:in `last_probe_temps'
+  app/controllers/dashboard_controller.rb:5:in `index'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (85.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:52:11 +1000 2011
+  Processing by DashboardController#index as HTML
+  [1m[35mTemperatures Load (0.6ms)[0m  SELECT probe_name FROM `temperatures` GROUP BY probe_name
+  [1m[36mTemperatures Load (0.9ms)[0m  [1mSELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 1' ORDER BY tstamp DESC LIMIT 1[0m
+Mysql2::Error: Unknown column 'tstamp' in 'order clause': SELECT  `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 1' ORDER BY tstamp DESC LIMIT 1
+Completed   in 24ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'tstamp' in 'order clause': SELECT  `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 1' ORDER BY tstamp DESC LIMIT 1):
+  app/models/temperatures.rb:8:in `last_probe_temps'
+  app/models/temperatures.rb:6:in `each'
+  app/models/temperatures.rb:6:in `last_probe_temps'
+  app/controllers/dashboard_controller.rb:5:in `index'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:52:24 +1000 2011
+  Processing by DashboardController#index as HTML
+  [1m[35mTemperatures Load (0.5ms)[0m  SELECT probe_name FROM `temperatures` GROUP BY probe_name
+  [1m[36mTemperatures Load (1.7ms)[0m  [1mSELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 1' ORDER BY created_at DESC LIMIT 1[0m
+  [1m[35mTemperatures Load (0.9ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 1' ORDER BY created_at DESC LIMIT 1 OFFSET 5
+Completed   in 17ms
+
+NoMethodError (undefined method `value' for nil:NilClass):
+  app/models/temperatures.rb:9:in `last_probe_temps'
+  app/models/temperatures.rb:6:in `each'
+  app/models/temperatures.rb:6:in `last_probe_temps'
+  app/controllers/dashboard_controller.rb:5:in `index'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:52:41 +1000 2011
+  Processing by DashboardController#index as HTML
+  [1m[36mTemperatures Load (0.5ms)[0m  [1mSELECT probe_name FROM `temperatures` GROUP BY probe_name[0m
+  [1m[35mTemperatures Load (0.6ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 1' ORDER BY created_at DESC LIMIT 1
+  [1m[36mTemperatures Load (0.5ms)[0m  [1mSELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 1' ORDER BY created_at DESC LIMIT 1 OFFSET 5[0m
+  [1m[35mTemperatures Load (0.4ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 2' ORDER BY created_at DESC LIMIT 1
+  [1m[36mTemperatures Load (0.4ms)[0m  [1mSELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 2' ORDER BY created_at DESC LIMIT 1 OFFSET 5[0m
+Rendered dashboard/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 72ms (Views: 10.8ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:52:44 +1000 2011
+  Processing by DashboardController#index as HTML
+  [1m[35mTemperatures Load (0.9ms)[0m  SELECT probe_name FROM `temperatures` GROUP BY probe_name
+  [1m[36mTemperatures Load (0.5ms)[0m  [1mSELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 1' ORDER BY created_at DESC LIMIT 1[0m
+  [1m[35mTemperatures Load (0.4ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 1' ORDER BY created_at DESC LIMIT 1 OFFSET 5
+  [1m[36mTemperatures Load (0.4ms)[0m  [1mSELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 2' ORDER BY created_at DESC LIMIT 1[0m
+  [1m[35mTemperatures Load (0.5ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_name` = 'Probe 2' ORDER BY created_at DESC LIMIT 1 OFFSET 5
+Rendered dashboard/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 75ms (Views: 10.9ms | ActiveRecord: 2.6ms)

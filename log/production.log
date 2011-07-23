@@ -1,0 +1,1278 @@
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:24:10 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (16.4ms)
+Completed   in 239ms
+
+ActionView::Template::Error (undefined method `capitalize' for #<Hash:0x10395bd58>):
+    1: <% @zones.each do  |id,zone| %>
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= zone.capitalize %>
+    4:   <div class="temp" id="temp_probe_<%= id %>">
+    5:     Last Temp:
+    6:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+  app/views/dashboard/index.html.erb:3:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+  app/views/dashboard/index.html.erb:1:in `each'
+  app/views/dashboard/index.html.erb:1:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:24:12 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.3ms)
+Completed   in 30ms
+
+ActionView::Template::Error (undefined method `capitalize' for #<Hash:0x103789908>):
+    1: <% @zones.each do  |id,zone| %>
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= zone.capitalize %>
+    4:   <div class="temp" id="temp_probe_<%= id %>">
+    5:     Last Temp:
+    6:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+  app/views/dashboard/index.html.erb:3:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+  app/views/dashboard/index.html.erb:1:in `each'
+  app/views/dashboard/index.html.erb:1:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:24:13 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.3ms)
+Completed   in 118ms
+
+ActionView::Template::Error (undefined method `capitalize' for #<Hash:0x103602210>):
+    1: <% @zones.each do  |id,zone| %>
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= zone.capitalize %>
+    4:   <div class="temp" id="temp_probe_<%= id %>">
+    5:     Last Temp:
+    6:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+  app/views/dashboard/index.html.erb:3:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+  app/views/dashboard/index.html.erb:1:in `each'
+  app/views/dashboard/index.html.erb:1:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:25:00 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.3ms)
+Completed   in 30ms
+
+ActionView::Template::Error (undefined method `capitalize' for #<Hash:0x10351f370>):
+    1: <% @zones.each do  |id,zone| %>
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= zone.capitalize %>
+    4:   <div class="temp" id="temp_probe_<%= id %>">
+    5:     Last Temp:
+    6:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+  app/views/dashboard/index.html.erb:3:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+  app/views/dashboard/index.html.erb:1:in `each'
+  app/views/dashboard/index.html.erb:1:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:25:08 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.3ms)
+Completed   in 30ms
+
+ActionView::Template::Error (undefined method `capitalize' for #<Hash:0x103927c60>):
+    1: <% @zones.each do  |id,zone| %>
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= zone.capitalize %>
+    4:   <div class="temp" id="temp_probe_<%= id %>">
+    5:     Last Temp:
+    6:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+  app/views/dashboard/index.html.erb:3:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+  app/views/dashboard/index.html.erb:1:in `each'
+  app/views/dashboard/index.html.erb:1:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:25:15 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.3ms)
+Completed   in 40ms
+
+ActionView::Template::Error (undefined method `capitalize' for #<Hash:0x103783238>):
+    1: <% @zones.each do  |id,zone| %>
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= zone.capitalize %>
+    4:   <div class="temp" id="temp_probe_<%= id %>">
+    5:     Last Temp:
+    6:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+  app/views/dashboard/index.html.erb:3:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+  app/views/dashboard/index.html.erb:1:in `each'
+  app/views/dashboard/index.html.erb:1:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:25:17 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.3ms)
+Completed   in 31ms
+
+ActionView::Template::Error (undefined method `capitalize' for #<Hash:0x1035fd800>):
+    1: <% @zones.each do  |id,zone| %>
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= zone.capitalize %>
+    4:   <div class="temp" id="temp_probe_<%= id %>">
+    5:     Last Temp:
+    6:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+  app/views/dashboard/index.html.erb:3:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+  app/views/dashboard/index.html.erb:1:in `each'
+  app/views/dashboard/index.html.erb:1:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:28:50 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.3ms)
+Completed   in 30ms
+
+ActionView::Template::Error (undefined method `capitalize' for #<Hash:0x10350ad58>):
+    1: <% @zones.each do  |id,zone| %>
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= zone.capitalize %>
+    4:   <div class="temp" id="temp_probe_<%= id %>">
+    5:     Last Temp:
+    6:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+  app/views/dashboard/index.html.erb:3:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+  app/views/dashboard/index.html.erb:1:in `each'
+  app/views/dashboard/index.html.erb:1:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (83.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:28:52 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.3ms)
+Completed   in 101ms
+
+ActionView::Template::Error (undefined method `capitalize' for #<Hash:0x103adad00>):
+    1: <% @zones.each do  |id,zone| %>
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= zone.capitalize %>
+    4:   <div class="temp" id="temp_probe_<%= id %>">
+    5:     Last Temp:
+    6:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+  app/views/dashboard/index.html.erb:3:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+  app/views/dashboard/index.html.erb:1:in `each'
+  app/views/dashboard/index.html.erb:1:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:31:14 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.3ms)
+Completed   in 30ms
+
+ActionView::Template::Error (undefined method `capitalize' for #<Hash:0x10386cb40>):
+    1: <% @zones.each do  |id,zone| %>
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= zone.capitalize %>
+    4:   <div class="temp" id="temp_probe_<%= id %>">
+    5:     Last Temp:
+    6:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+  app/views/dashboard/index.html.erb:3:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+  app/views/dashboard/index.html.erb:1:in `each'
+  app/views/dashboard/index.html.erb:1:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.5ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:31:25 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.3ms)
+Completed   in 29ms
+
+ActionView::Template::Error (undefined method `capitalize' for #<Hash:0x1036cc858>):
+    1: <% @zones.each do  |id,zone| %>
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= zone.capitalize %>
+    4:   <div class="temp" id="temp_probe_<%= id %>">
+    5:     Last Temp:
+    6:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+  app/views/dashboard/index.html.erb:3:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+  app/views/dashboard/index.html.erb:1:in `each'
+  app/views/dashboard/index.html.erb:1:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:31:26 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.3ms)
+Completed   in 30ms
+
+ActionView::Template::Error (undefined method `capitalize' for #<Hash:0x103599760>):
+    1: <% @zones.each do  |id,zone| %>
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= zone.capitalize %>
+    4:   <div class="temp" id="temp_probe_<%= id %>">
+    5:     Last Temp:
+    6:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+  app/views/dashboard/index.html.erb:3:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+  app/views/dashboard/index.html.erb:1:in `each'
+  app/views/dashboard/index.html.erb:1:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.5ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:31:27 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.3ms)
+Completed   in 29ms
+
+ActionView::Template::Error (undefined method `capitalize' for #<Hash:0x1034a8d38>):
+    1: <% @zones.each do  |id,zone| %>
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= zone.capitalize %>
+    4:   <div class="temp" id="temp_probe_<%= id %>">
+    5:     Last Temp:
+    6:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+  app/views/dashboard/index.html.erb:3:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+  app/views/dashboard/index.html.erb:1:in `each'
+  app/views/dashboard/index.html.erb:1:in `_app_views_dashboard_index_html_erb___1355500632_2177471520_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (73.0ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (79.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:32:05 +1000 2011
+  Processing by DashboardController#index as HTML
+Completed   in 0ms
+
+NameError (uninitialized class variable @@CONFIG in DashboardController):
+  app/controllers/dashboard_controller.rb:4:in `index'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.4ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:32:18 +1000 2011
+  Processing by DashboardController#index as HTML
+Completed   in 0ms
+
+NameError (uninitialized class variable @@CONFIG in DashboardController):
+  app/controllers/dashboard_controller.rb:4:in `index'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:32:19 +1000 2011
+  Processing by DashboardController#index as HTML
+Completed   in 0ms
+
+NameError (uninitialized class variable @@CONFIG in DashboardController):
+  app/controllers/dashboard_controller.rb:4:in `index'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:32:26 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (5.8ms)
+Completed   in 117ms
+
+ActionView::Template::Error (compile error
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...ffer.safe_concat('  <div class="temp" id="temp_probe_');@out...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+...concat('  <div class="temp" id="temp_probe_');@output_buffer...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:6: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unknown regexp option - p
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unmatched ): /p>
+    <p>');@output_buffer.append= (raw format_delta(@last_temperature[id]["deltafive"]) );@output_buffer.safe_concat('</
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:9: syntax error, unexpected '<'
+  </div>
+   ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:10: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                                ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:13: syntax error, unexpected '>'
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="temp" id="temp_probe_3">
+                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:<br/>
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+    Last Temp:<br/>
+                 ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:17: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:18: syntax error, unexpected '<'
+</div>
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:20: syntax error, unexpected '<'
+<div id="stage">
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+  Current stage: inactive
+               ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:23: unknown regexp options - bdy
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: unterminated string meets end of file
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: syntax error, unexpected $end, expecting ')'):
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= #zone.capitalize %>
+    4:   <%= pp zone %>
+    5:   <div class="temp" id="temp_probe_<%= id %>">
+    6:     Last Temp:
+    7:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+    8:     <p><%=raw format_delta(@last_temperature[id]["deltafive"]) %></p>
+  app/views/dashboard/index.html.erb:24:in `compile'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:32:27 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.8ms)
+Completed   in 29ms
+
+ActionView::Template::Error (compile error
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...ffer.safe_concat('  <div class="temp" id="temp_probe_');@out...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+...concat('  <div class="temp" id="temp_probe_');@output_buffer...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:6: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unknown regexp option - p
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unmatched ): /p>
+    <p>');@output_buffer.append= (raw format_delta(@last_temperature[id]["deltafive"]) );@output_buffer.safe_concat('</
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:9: syntax error, unexpected '<'
+  </div>
+   ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:10: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                                ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:13: syntax error, unexpected '>'
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="temp" id="temp_probe_3">
+                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:<br/>
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+    Last Temp:<br/>
+                 ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:17: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:18: syntax error, unexpected '<'
+</div>
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:20: syntax error, unexpected '<'
+<div id="stage">
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+  Current stage: inactive
+               ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:23: unknown regexp options - bdy
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: unterminated string meets end of file
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: syntax error, unexpected $end, expecting ')'):
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= #zone.capitalize %>
+    4:   <%= pp zone %>
+    5:   <div class="temp" id="temp_probe_<%= id %>">
+    6:     Last Temp:
+    7:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+    8:     <p><%=raw format_delta(@last_temperature[id]["deltafive"]) %></p>
+  app/views/dashboard/index.html.erb:24:in `compile'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:32:28 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.8ms)
+Completed   in 30ms
+
+ActionView::Template::Error (compile error
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...ffer.safe_concat('  <div class="temp" id="temp_probe_');@out...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+...concat('  <div class="temp" id="temp_probe_');@output_buffer...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:6: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unknown regexp option - p
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unmatched ): /p>
+    <p>');@output_buffer.append= (raw format_delta(@last_temperature[id]["deltafive"]) );@output_buffer.safe_concat('</
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:9: syntax error, unexpected '<'
+  </div>
+   ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:10: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                                ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:13: syntax error, unexpected '>'
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="temp" id="temp_probe_3">
+                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:<br/>
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+    Last Temp:<br/>
+                 ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:17: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:18: syntax error, unexpected '<'
+</div>
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:20: syntax error, unexpected '<'
+<div id="stage">
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+  Current stage: inactive
+               ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:23: unknown regexp options - bdy
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: unterminated string meets end of file
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: syntax error, unexpected $end, expecting ')'):
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= #zone.capitalize %>
+    4:   <%= pp zone %>
+    5:   <div class="temp" id="temp_probe_<%= id %>">
+    6:     Last Temp:
+    7:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+    8:     <p><%=raw format_delta(@last_temperature[id]["deltafive"]) %></p>
+  app/views/dashboard/index.html.erb:24:in `compile'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:32:29 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.8ms)
+Completed   in 93ms
+
+ActionView::Template::Error (compile error
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...ffer.safe_concat('  <div class="temp" id="temp_probe_');@out...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+...concat('  <div class="temp" id="temp_probe_');@output_buffer...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:6: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unknown regexp option - p
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unmatched ): /p>
+    <p>');@output_buffer.append= (raw format_delta(@last_temperature[id]["deltafive"]) );@output_buffer.safe_concat('</
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:9: syntax error, unexpected '<'
+  </div>
+   ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:10: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                                ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:13: syntax error, unexpected '>'
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="temp" id="temp_probe_3">
+                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:<br/>
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+    Last Temp:<br/>
+                 ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:17: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:18: syntax error, unexpected '<'
+</div>
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:20: syntax error, unexpected '<'
+<div id="stage">
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+  Current stage: inactive
+               ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:23: unknown regexp options - bdy
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: unterminated string meets end of file
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: syntax error, unexpected $end, expecting ')'):
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= #zone.capitalize %>
+    4:   <%= pp zone %>
+    5:   <div class="temp" id="temp_probe_<%= id %>">
+    6:     Last Temp:
+    7:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+    8:     <p><%=raw format_delta(@last_temperature[id]["deltafive"]) %></p>
+  app/views/dashboard/index.html.erb:24:in `compile'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:33:07 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.8ms)
+Completed   in 30ms
+
+ActionView::Template::Error (compile error
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...ffer.safe_concat('  <div class="temp" id="temp_probe_');@out...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+...concat('  <div class="temp" id="temp_probe_');@output_buffer...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:6: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unknown regexp option - p
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unmatched ): /p>
+    <p>');@output_buffer.append= (raw format_delta(@last_temperature[id]["deltafive"]) );@output_buffer.safe_concat('</
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:9: syntax error, unexpected '<'
+  </div>
+   ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:10: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                                ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:13: syntax error, unexpected '>'
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="temp" id="temp_probe_3">
+                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:<br/>
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+    Last Temp:<br/>
+                 ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:17: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:18: syntax error, unexpected '<'
+</div>
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:20: syntax error, unexpected '<'
+<div id="stage">
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+  Current stage: inactive
+               ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:23: unknown regexp options - bdy
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: unterminated string meets end of file
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: syntax error, unexpected $end, expecting ')'):
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= #zone.capitalize %>
+    4:   <%= pp zone %>
+    5:   <div class="temp" id="temp_probe_<%= id %>">
+    6:     Last Temp:
+    7:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+    8:     <p><%=raw format_delta(@last_temperature[id]["deltafive"]) %></p>
+  app/views/dashboard/index.html.erb:24:in `compile'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:33:08 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.8ms)
+Completed   in 29ms
+
+ActionView::Template::Error (compile error
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...ffer.safe_concat('  <div class="temp" id="temp_probe_');@out...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+...concat('  <div class="temp" id="temp_probe_');@output_buffer...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:6: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unknown regexp option - p
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unmatched ): /p>
+    <p>');@output_buffer.append= (raw format_delta(@last_temperature[id]["deltafive"]) );@output_buffer.safe_concat('</
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:9: syntax error, unexpected '<'
+  </div>
+   ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:10: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                                ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:13: syntax error, unexpected '>'
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="temp" id="temp_probe_3">
+                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:<br/>
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+    Last Temp:<br/>
+                 ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:17: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:18: syntax error, unexpected '<'
+</div>
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:20: syntax error, unexpected '<'
+<div id="stage">
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+  Current stage: inactive
+               ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:23: unknown regexp options - bdy
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: unterminated string meets end of file
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: syntax error, unexpected $end, expecting ')'):
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= #zone.capitalize %>
+    4:   <%= pp zone %>
+    5:   <div class="temp" id="temp_probe_<%= id %>">
+    6:     Last Temp:
+    7:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+    8:     <p><%=raw format_delta(@last_temperature[id]["deltafive"]) %></p>
+  app/views/dashboard/index.html.erb:24:in `compile'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:33:30 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (1.5ms)
+Completed   in 30ms
+
+ActionView::Template::Error (compile error
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...ffer.safe_concat('  <div class="temp" id="temp_probe_');@out...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+...concat('  <div class="temp" id="temp_probe_');@output_buffer...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:6: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unknown regexp option - p
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unmatched ): /p>
+    <p>');@output_buffer.append= (raw format_delta(@last_temperature[id]["deltafive"]) );@output_buffer.safe_concat('</
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:9: syntax error, unexpected '<'
+  </div>
+   ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:10: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                                ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:13: syntax error, unexpected '>'
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="temp" id="temp_probe_3">
+                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:<br/>
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+    Last Temp:<br/>
+                 ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:17: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:18: syntax error, unexpected '<'
+</div>
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:20: syntax error, unexpected '<'
+<div id="stage">
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+  Current stage: inactive
+               ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:23: unknown regexp options - bdy
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: unterminated string meets end of file
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: syntax error, unexpected $end, expecting ')'):
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= #zone.capitalize %>
+    4:   <%= pp zone %>
+    5:   <div class="temp" id="temp_probe_<%= id %>">
+    6:     Last Temp:
+    7:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+    8:     <p><%=raw format_delta(@last_temperature[id]["deltafive"]) %></p>
+  app/views/dashboard/index.html.erb:24:in `compile'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:33:31 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.8ms)
+Completed   in 30ms
+
+ActionView::Template::Error (compile error
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...ffer.safe_concat('  <div class="temp" id="temp_probe_');@out...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+...concat('  <div class="temp" id="temp_probe_');@output_buffer...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:6: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unknown regexp option - p
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unmatched ): /p>
+    <p>');@output_buffer.append= (raw format_delta(@last_temperature[id]["deltafive"]) );@output_buffer.safe_concat('</
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:9: syntax error, unexpected '<'
+  </div>
+   ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:10: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                                ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:13: syntax error, unexpected '>'
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="temp" id="temp_probe_3">
+                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:<br/>
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+    Last Temp:<br/>
+                 ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:17: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:18: syntax error, unexpected '<'
+</div>
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:20: syntax error, unexpected '<'
+<div id="stage">
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+  Current stage: inactive
+               ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:23: unknown regexp options - bdy
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: unterminated string meets end of file
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: syntax error, unexpected $end, expecting ')'):
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= #zone.capitalize %>
+    4:   <%= pp zone %>
+    5:   <div class="temp" id="temp_probe_<%= id %>">
+    6:     Last Temp:
+    7:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+    8:     <p><%=raw format_delta(@last_temperature[id]["deltafive"]) %></p>
+  app/views/dashboard/index.html.erb:24:in `compile'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (68.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (79.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:33:38 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.9ms)
+Completed   in 30ms
+
+ActionView::Template::Error (compile error
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...ffer.safe_concat('  <div class="temp" id="temp_probe_');@out...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+...concat('  <div class="temp" id="temp_probe_');@output_buffer...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:6: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unknown regexp option - p
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unmatched ): /p>
+    <p>');@output_buffer.append= (raw format_delta(@last_temperature[id]["deltafive"]) );@output_buffer.safe_concat('</
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:9: syntax error, unexpected '<'
+  </div>
+   ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:10: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                                ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:13: syntax error, unexpected '>'
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="temp" id="temp_probe_3">
+                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:<br/>
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+    Last Temp:<br/>
+                 ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:17: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:18: syntax error, unexpected '<'
+</div>
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:20: syntax error, unexpected '<'
+<div id="stage">
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+  Current stage: inactive
+               ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:23: unknown regexp options - bdy
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: unterminated string meets end of file
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: syntax error, unexpected $end, expecting ')'):
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= #zone.capitalize %>
+    4:   <%= pp zone %>
+    5:   <div class="temp" id="temp_probe_<%= id %>">
+    6:     Last Temp:
+    7:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+    8:     <p><%=raw format_delta(@last_temperature[id]["deltafive"]) %></p>
+  app/views/dashboard/index.html.erb:24:in `compile'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:33:39 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.8ms)
+Completed   in 30ms
+
+ActionView::Template::Error (compile error
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...ffer.safe_concat('  <div class="temp" id="temp_probe_');@out...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+...concat('  <div class="temp" id="temp_probe_');@output_buffer...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:6: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unknown regexp option - p
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unmatched ): /p>
+    <p>');@output_buffer.append= (raw format_delta(@last_temperature[id]["deltafive"]) );@output_buffer.safe_concat('</
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:9: syntax error, unexpected '<'
+  </div>
+   ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:10: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                                ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:13: syntax error, unexpected '>'
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="temp" id="temp_probe_3">
+                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:<br/>
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+    Last Temp:<br/>
+                 ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:17: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:18: syntax error, unexpected '<'
+</div>
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:20: syntax error, unexpected '<'
+<div id="stage">
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+  Current stage: inactive
+               ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:23: unknown regexp options - bdy
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: unterminated string meets end of file
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: syntax error, unexpected $end, expecting ')'):
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= #zone.capitalize %>
+    4:   <%= pp zone %>
+    5:   <div class="temp" id="temp_probe_<%= id %>">
+    6:     Last Temp:
+    7:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+    8:     <p><%=raw format_delta(@last_temperature[id]["deltafive"]) %></p>
+  app/views/dashboard/index.html.erb:24:in `compile'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:33:40 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.8ms)
+Completed   in 31ms
+
+ActionView::Template::Error (compile error
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...ffer.safe_concat('  <div class="temp" id="temp_probe_');@out...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+...concat('  <div class="temp" id="temp_probe_');@output_buffer...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:6: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unknown regexp option - p
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unmatched ): /p>
+    <p>');@output_buffer.append= (raw format_delta(@last_temperature[id]["deltafive"]) );@output_buffer.safe_concat('</
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:9: syntax error, unexpected '<'
+  </div>
+   ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:10: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                                ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:13: syntax error, unexpected '>'
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="temp" id="temp_probe_3">
+                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:<br/>
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+    Last Temp:<br/>
+                 ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:17: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:18: syntax error, unexpected '<'
+</div>
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:20: syntax error, unexpected '<'
+<div id="stage">
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+  Current stage: inactive
+               ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:23: unknown regexp options - bdy
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: unterminated string meets end of file
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: syntax error, unexpected $end, expecting ')'):
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= #zone.capitalize %>
+    4:   <%= pp zone %>
+    5:   <div class="temp" id="temp_probe_<%= id %>">
+    6:     Last Temp:
+    7:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+    8:     <p><%=raw format_delta(@last_temperature[id]["deltafive"]) %></p>
+  app/views/dashboard/index.html.erb:24:in `compile'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:34:03 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.8ms)
+Completed   in 29ms
+
+ActionView::Template::Error (compile error
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...ffer.safe_concat('  <div class="temp" id="temp_probe_');@out...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+...concat('  <div class="temp" id="temp_probe_');@output_buffer...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:6: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unknown regexp option - p
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unmatched ): /p>
+    <p>');@output_buffer.append= (raw format_delta(@last_temperature[id]["deltafive"]) );@output_buffer.safe_concat('</
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:9: syntax error, unexpected '<'
+  </div>
+   ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:10: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                                ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:13: syntax error, unexpected '>'
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="temp" id="temp_probe_3">
+                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:<br/>
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+    Last Temp:<br/>
+                 ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:17: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:18: syntax error, unexpected '<'
+</div>
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:20: syntax error, unexpected '<'
+<div id="stage">
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+  Current stage: inactive
+               ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:23: unknown regexp options - bdy
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: unterminated string meets end of file
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: syntax error, unexpected $end, expecting ')'):
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= #zone.capitalize %>
+    4:   <%= pp zone %>
+    5:   <div class="temp" id="temp_probe_<%= id %>">
+    6:     Last Temp:
+    7:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+    8:     <p><%=raw format_delta(@last_temperature[id]["deltafive"]) %></p>
+  app/views/dashboard/index.html.erb:24:in `compile'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (77.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:34:03 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (0.8ms)
+Completed   in 30ms
+
+ActionView::Template::Error (compile error
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...ffer.safe_concat('  <div class="temp" id="temp_probe_');@out...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+...concat('  <div class="temp" id="temp_probe_');@output_buffer...
+                              ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:6: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unknown regexp option - p
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:8: unmatched ): /p>
+    <p>');@output_buffer.append= (raw format_delta(@last_temperature[id]["deltafive"]) );@output_buffer.safe_concat('</
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:9: syntax error, unexpected '<'
+  </div>
+   ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:10: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.safe_concat('<div class="zone" id="ambient">
+                                                ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:13: syntax error, unexpected '>'
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="temp" id="temp_probe_3">
+                      ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+    Last Temp:<br/>
+             ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+    Last Temp:<br/>
+                 ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:17: unknown regexp options - dv
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:18: syntax error, unexpected '<'
+</div>
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:20: syntax error, unexpected '<'
+<div id="stage">
+ ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+  Current stage: inactive
+               ^
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:23: unknown regexp options - bdy
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: unterminated string meets end of file
+/Users/ben/Documents/dev/tempcontrol/app/views/dashboard/index.html.erb:24: syntax error, unexpected $end, expecting ')'):
+    2: <div class="zone" id="<%= zone %>">
+    3:   <%= #zone.capitalize %>
+    4:   <%= pp zone %>
+    5:   <div class="temp" id="temp_probe_<%= id %>">
+    6:     Last Temp:
+    7:     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
+    8:     <p><%=raw format_delta(@last_temperature[id]["deltafive"]) %></p>
+  app/views/dashboard/index.html.erb:24:in `compile'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:35:51 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 112ms (Views: 8.0ms | ActiveRecord: 60.8ms)
+
+
+Started GET "/stylesheets/main.css?1309766480" for 127.0.0.1 at Sat Jul 23 14:35:51 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/main.css"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/prototype.js?1309734116" for 127.0.0.1 at Sat Jul 23 14:35:52 +1000 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.2ms)
+
+
+Started GET "/javascripts/effects.js?1309734116" for 127.0.0.1 at Sat Jul 23 14:35:52 +1000 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/dragdrop.js?1309734116" for 127.0.0.1 at Sat Jul 23 14:35:52 +1000 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/controls.js?1309734116" for 127.0.0.1 at Sat Jul 23 14:35:52 +1000 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/rails.js?1309734116" for 127.0.0.1 at Sat Jul 23 14:35:52 +1000 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/application.js?1309734116" for 127.0.0.1 at Sat Jul 23 14:35:52 +1000 2011
+
+ActionController::RoutingError (No route matches "/javascripts/application.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jul 23 14:35:53 +1000 2011
+  Processing by DashboardController#index as HTML
+Rendered dashboard/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 32ms (Views: 2.4ms | ActiveRecord: 25.1ms)
+
+
+Started GET "/javascripts/effects.js?1309734116" for 127.0.0.1 at Sat Jul 23 14:35:53 +1000 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/javascripts/dragdrop.js?1309734116" for 127.0.0.1 at Sat Jul 23 14:35:53 +1000 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/javascripts/rails.js?1309734116" for 127.0.0.1 at Sat Jul 23 14:35:53 +1000 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.6ms)
+
+
+Started GET "/stylesheets/main.css?1309766480" for 127.0.0.1 at Sat Jul 23 14:35:53 +1000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/main.css"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/prototype.js?1309734116" for 127.0.0.1 at Sat Jul 23 14:35:53 +1000 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/javascripts/controls.js?1309734116" for 127.0.0.1 at Sat Jul 23 14:35:53 +1000 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/javascripts/application.js?1309734116" for 127.0.0.1 at Sat Jul 23 14:35:54 +1000 2011
+
+ActionController::RoutingError (No route matches "/javascripts/application.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)

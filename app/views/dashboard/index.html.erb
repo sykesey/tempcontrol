@@ -1,6 +1,6 @@
 <% @zones.each do  |id,zone| %>
 <div class="zone" id="<%= zone %>">
-  <%= zone.capitalize %>
+  <%= id.capitalize %>
   <div class="temp" id="temp_probe_<%= id %>">
     Last Temp:
     <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>

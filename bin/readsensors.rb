@@ -13,7 +13,7 @@ def get_temperatures (sensors)
 end
 
 def save_temp (id,name,value)
-    temp = Database::Temperature.new( "probe_id" => id,
+    temp = Temperatures.new( "probe_id" => id,
                             "probe_name" => name,
                             "value" => value )
     temp.save
