@@ -15,11 +15,20 @@ def read_device_type(id)
   read_device id, "type"
 end
 
+def send_synchronous
+   `#{CONFIG["ow"]["bin"]}/owwrite -s #{CONFIG["ow"]["server"]} /simultaneous 1`
+end
+
 def read_device(id,param)
   val = `#{CONFIG["ow"]["bin"]}/owread -s #{CONFIG["ow"]["server"]} /#{id}/#{param}`.gsub(/\s/,'')
   return -1 if val.nil?
+  puts "#{id}/#{param}: #{val}"  if CONFIG["debug"]
   return val
 end
+
+def write_device(id,param,value)
+  `#{CONFIG["ow"]["bin"]}/owwrite -s #{CONFIG["ow"]["server"]} /#{id}/#{param} #{value}`
+end 
 
 class Device
   attr_accessor :name, :id
@@ -37,6 +46,10 @@ class Device
     read_device_type @id
   end
 
+  def write_device_parameter (param,value)
+    write_device(id,param,value)
+  end
+
 end
 
 class Device::TempSensor < Device
@@ -49,14 +62,41 @@ class Device::TempSensor < Device
   
 end
 
-class Device::GPIO < Device
-  attr_accessor :num_pins
+class Device::Switch < Device
+  attr_accessor :channels
+  
+  def initialize(id,name,channels)
+    @id = id
+    @name = name
+    @channels = channels
+  end
 end
 
-class Device::GPIO::Pin < Device
-  attr_accessor :parent, :io_type
-  #:parent => id of parent GPIO device
-  #:io_type => input or output
+class Device::Switch::Channel < Device
+  attr_accessor :switch
+  
+  def initialize(id,name,switch)
+    @id = id
+    @name = name
+    @switch = switch
+  end
+  
+  def on
+   write_device(@id,@name,1)
+  end
+
+  def off
+   write_device(@id,@name,0)
+  end
+
+  def is_on?
+    return ( read_device(@id,@name).to_i == 1 ? true : false)
+  end
+
+  def is_off?
+   return ( read_device(@id,@name).to_i == 0 ? true : false)
+  end
+  
 end
 
 class Device::ADC < Device

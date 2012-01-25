@@ -3,18 +3,11 @@
   <%= id.capitalize %>
   <div class="temp" id="temp_probe_<%= id %>">
     Last Temp:
-    <p><%=raw format_temp(@last_temperature[id]["current"]) %>  </p>
-    <p><%=raw format_delta(@last_temperature[id]["deltafive"]) %></p>
+    <p><%=raw format_temp(@last_temperature[zone["sensor"]]["current"]) %>  </p>
+    <p><%=raw format_delta(@last_temperature[zone["sensor"]]["deltafive"]) %></p>
   </div>
 </div>
 <% end %>
-<div class="zone" id="ambient">
-  Ambient<br/>
-  <div class="temp" id="temp_probe_3">
-    Last Temp:<br/>
-   <span class="temp_value"> n/a</span>
-  </div>
-</div>
 <br style="clear:both;"/>
 <div id="stage">
   Current stage: inactive

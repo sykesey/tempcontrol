@@ -11,7 +11,12 @@
 	  "10.4D9241010800": {
 	    "type": ["TempSensor"],
 	    "name": "Probe 3"
-	  } 
+	  },
+          "3A.E5FF05000000": {
+            "type": ["Switch","InputSensor"],
+            "name": "Switch 1",
+            "channels": ["PIO.A","PIO.B"]
+	  }
 	 },
 	 "zones":
 	 {
@@ -20,14 +25,19 @@
 			"sensor": "10.163536010800",
 			"manage": true,
 			"default_target_temp": 72,
-			"valves": ["mashtun"]
+                        "heater": { "switch": "3A.E5FF05000000",
+                                    "channel": "PIO.B",
+                                    "hysterisis": 60,
+                                    "duty_cycle": 100
+                                  }
+			//,"valves": ["mashtun"]
 		},
 		"mashtun":
 		{
 			"sensor": "10.0A3436010800",
-			"manage": true,
-			"default_target_temp": 65,
-			"valves": ["kettle"]
+			"manage": false,
+			"default_target_temp": 65
+			//,"valves": ["kettle"]
 		},
 		"ambient":
 		{
@@ -39,5 +49,6 @@
 	   "bin": "/usr/local/owfs/bin",
 	   "args": " -uall ",
            "server": " localhost "
-	 }
+	 },
+	 "debug": false
  }
