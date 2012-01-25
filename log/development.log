@@ -2571,3 +2571,131 @@ Interrupt: : COMMIT
   [1m[35mAREL (0.4ms)[0m  INSERT INTO `temperatures` (`created_at`, `updated_at`, `probe_name`, `value`, `probe_id`) VALUES ('2012-01-25 08:10:07', '2012-01-25 08:10:07', 'Probe 3', 22.25, '10.4D9241010800')
   [1m[36mSQL (1.1ms)[0m  [1mCOMMIT[0m
   [1m[35mTemperatures Load (0.5ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_id` = '10.163536010800' ORDER BY temperatures.id DESC LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.7ms)[0m  [1mdescribe `temperatures`[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO `temperatures` (`value`, `probe_name`, `updated_at`, `created_at`, `probe_id`) VALUES (21.625, 'Probe 1', '2012-01-25 10:53:58', '2012-01-25 10:53:58', '10.163536010800')
+  [1m[36mSQL (1.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mTemperatures Load (0.5ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_id` = '10.163536010800' ORDER BY temperatures.id DESC LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO `temperatures` (`value`, `probe_name`, `updated_at`, `created_at`, `probe_id`) VALUES (21.625, 'Probe 1', '2012-01-25 10:54:14', '2012-01-25 10:54:14', '10.163536010800')
+  [1m[36mSQL (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mTemperatures Load (0.5ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_id` = '10.163536010800' ORDER BY temperatures.id DESC LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.6ms)[0m  INSERT INTO `temperatures` (`value`, `probe_name`, `updated_at`, `created_at`, `probe_id`) VALUES (20.5625, 'Probe 2', '2012-01-25 10:54:31', '2012-01-25 10:54:31', '10.0A3436010800')
+  [1m[36mSQL (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `temperatures` (`value`, `probe_name`, `updated_at`, `created_at`, `probe_id`) VALUES (21.6875, 'Probe 1', '2012-01-25 10:54:32', '2012-01-25 10:54:32', '10.163536010800')[0m
+  [1m[35mSQL (0.9ms)[0m  COMMIT
+  [1m[36mTemperatures Load (1.2ms)[0m  [1mSELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_id` = '10.163536010800' ORDER BY temperatures.id DESC LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `temperatures` (`value`, `probe_name`, `updated_at`, `created_at`, `probe_id`) VALUES (21.625, 'Probe 1', '2012-01-25 10:54:55', '2012-01-25 10:54:55', '10.163536010800')[0m
+  [1m[35mSQL (1.0ms)[0m  COMMIT
+  [1m[36mTemperatures Load (2.0ms)[0m  [1mSELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_id` = '10.163536010800' ORDER BY temperatures.id DESC LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `temperatures` (`value`, `probe_name`, `updated_at`, `created_at`, `probe_id`) VALUES (21.625, 'Probe 1', '2012-01-25 10:55:12', '2012-01-25 10:55:12', '10.163536010800')[0m
+  [1m[35mSQL (1.0ms)[0m  COMMIT
+  [1m[36mTemperatures Load (0.6ms)[0m  [1mSELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_id` = '10.163536010800' ORDER BY temperatures.id DESC LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mAREL (0.8ms)[0m  [1mINSERT INTO `temperatures` (`value`, `probe_name`, `updated_at`, `created_at`, `probe_id`) VALUES (21.625, 'Probe 1', '2012-01-25 10:55:28', '2012-01-25 10:55:28', '10.163536010800')[0m
+  [1m[35mSQL (1.0ms)[0m  COMMIT
+  [1m[36mTemperatures Load (0.9ms)[0m  [1mSELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_id` = '10.163536010800' ORDER BY temperatures.id DESC LIMIT 1[0m
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (40.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.6ms)[0m  [1mdescribe `temperatures`[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO `temperatures` (`value`, `probe_name`, `updated_at`, `created_at`, `probe_id`) VALUES (21.625, 'Probe 1', '2012-01-25 11:16:56', '2012-01-25 11:16:56', '10.163536010800')
+  [1m[36mSQL (8.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mTemperatures Load (0.6ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_id` = '10.163536010800' ORDER BY temperatures.id DESC LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `temperatures` (`value`, `probe_name`, `updated_at`, `created_at`, `probe_id`) VALUES (21.5625, 'Probe 1', '2012-01-25 11:17:12', '2012-01-25 11:17:12', '10.163536010800')
+  [1m[36mSQL (72.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mTemperatures Load (1.3ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_id` = '10.163536010800' ORDER BY temperatures.id DESC LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO `temperatures` (`value`, `probe_name`, `updated_at`, `created_at`, `probe_id`) VALUES (21.5625, 'Probe 1', '2012-01-25 11:17:29', '2012-01-25 11:17:29', '10.163536010800')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mTemperatures Load (0.6ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_id` = '10.163536010800' ORDER BY temperatures.id DESC LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `temperatures` (`value`, `probe_name`, `updated_at`, `created_at`, `probe_id`) VALUES (21.625, 'Probe 1', '2012-01-25 11:17:45', '2012-01-25 11:17:45', '10.163536010800')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mTemperatures Load (2.8ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_id` = '10.163536010800' ORDER BY temperatures.id DESC LIMIT 1
+  [1m[36mTemperatures Load (0.8ms)[0m  [1mSELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_id` = '10.163536010800' ORDER BY temperatures.id DESC LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `temperatures` (`value`, `probe_name`, `updated_at`, `created_at`, `probe_id`) VALUES (21.625, 'Probe 1', '2012-01-25 11:18:20', '2012-01-25 11:18:20', '10.163536010800')[0m
+  [1m[35mSQL (1.0ms)[0m  COMMIT
+  [1m[36mTemperatures Load (12.1ms)[0m  [1mSELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_id` = '10.163536010800' ORDER BY temperatures.id DESC LIMIT 1[0m
+  [1m[36mSQL (40.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.5ms)[0m  [1mdescribe `temperatures`[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `temperatures` (`value`, `probe_name`, `updated_at`, `created_at`, `probe_id`) VALUES (21.5625, 'Probe 1', '2012-01-25 11:19:15', '2012-01-25 11:19:15', '10.163536010800')
+  [1m[36mSQL (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mTemperatures Load (0.7ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_id` = '10.163536010800' ORDER BY temperatures.id DESC LIMIT 1
+  [1m[36mSQL (41.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.6ms)[0m  [1mdescribe `temperatures`[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `temperatures` (`value`, `probe_name`, `updated_at`, `created_at`, `probe_id`) VALUES (21.625, 'Probe 1', '2012-01-25 11:20:04', '2012-01-25 11:20:04', '10.163536010800')
+  [1m[36mSQL (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mTemperatures Load (0.7ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_id` = '10.163536010800' ORDER BY temperatures.id DESC LIMIT 1
+  [1m[36mSQL (33.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.6ms)[0m  [1mdescribe `temperatures`[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO `temperatures` (`created_at`, `updated_at`, `probe_name`, `value`, `probe_id`) VALUES ('2012-01-25 11:25:49', '2012-01-25 11:25:49', 'Probe 2', 22.1875, '10.0A3436010800')
+  [1m[36mSQL (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.3ms)[0m  BEGIN
+  [1m[36mAREL (1.2ms)[0m  [1mINSERT INTO `temperatures` (`created_at`, `updated_at`, `probe_name`, `value`, `probe_id`) VALUES ('2012-01-25 11:25:50', '2012-01-25 11:25:50', 'Probe 1', 21.625, '10.163536010800')[0m
+  [1m[35mSQL (1.3ms)[0m  COMMIT
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.7ms)[0m  INSERT INTO `temperatures` (`created_at`, `updated_at`, `probe_name`, `value`, `probe_id`) VALUES ('2012-01-25 11:25:51', '2012-01-25 11:25:51', 'Probe 3', 21.625, '10.4D9241010800')
+  [1m[36mSQL (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mTemperatures Load (0.6ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_id` = '10.163536010800' ORDER BY temperatures.id DESC LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (2.8ms)[0m  INSERT INTO `temperatures` (`created_at`, `updated_at`, `probe_name`, `value`, `probe_id`) VALUES ('2012-01-25 11:26:08', '2012-01-25 11:26:08', 'Probe 2', 22.125, '10.0A3436010800')
+  [1m[36mSQL (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.3ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `temperatures` (`created_at`, `updated_at`, `probe_name`, `value`, `probe_id`) VALUES ('2012-01-25 11:26:09', '2012-01-25 11:26:09', 'Probe 1', 21.625, '10.163536010800')[0m
+  [1m[35mSQL (0.6ms)[0m  COMMIT
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `temperatures` (`created_at`, `updated_at`, `probe_name`, `value`, `probe_id`) VALUES ('2012-01-25 11:26:10', '2012-01-25 11:26:10', 'Probe 3', 21.625, '10.4D9241010800')
+  [1m[36mSQL (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mTemperatures Load (0.4ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_id` = '10.163536010800' ORDER BY temperatures.id DESC LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.7ms)[0m  INSERT INTO `temperatures` (`created_at`, `updated_at`, `probe_name`, `value`, `probe_id`) VALUES ('2012-01-25 11:26:26', '2012-01-25 11:26:26', 'Probe 2', 22.125, '10.0A3436010800')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (8.7ms)[0m  BEGIN
+  [1m[36mAREL (11.1ms)[0m  [1mINSERT INTO `temperatures` (`created_at`, `updated_at`, `probe_name`, `value`, `probe_id`) VALUES ('2012-01-25 11:26:27', '2012-01-25 11:26:27', 'Probe 1', 21.625, '10.163536010800')[0m
+  [1m[35mSQL (2.0ms)[0m  COMMIT
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.6ms)[0m  INSERT INTO `temperatures` (`created_at`, `updated_at`, `probe_name`, `value`, `probe_id`) VALUES ('2012-01-25 11:26:29', '2012-01-25 11:26:29', 'Probe 3', 21.625, '10.4D9241010800')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mTemperatures Load (6.8ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_id` = '10.163536010800' ORDER BY temperatures.id DESC LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.9ms)[0m  INSERT INTO `temperatures` (`created_at`, `updated_at`, `probe_name`, `value`, `probe_id`) VALUES ('2012-01-25 11:26:45', '2012-01-25 11:26:45', 'Probe 2', 22.125, '10.0A3436010800')
+  [1m[36mSQL (1.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `temperatures` (`created_at`, `updated_at`, `probe_name`, `value`, `probe_id`) VALUES ('2012-01-25 11:26:46', '2012-01-25 11:26:46', 'Probe 1', 21.625, '10.163536010800')[0m
+  [1m[35mSQL (1.0ms)[0m  COMMIT
+  [1m[36mSQL (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO `temperatures` (`created_at`, `updated_at`, `probe_name`, `value`, `probe_id`) VALUES ('2012-01-25 11:26:47', '2012-01-25 11:26:47', 'Probe 3', 21.625, '10.4D9241010800')
+  [1m[36mSQL (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mTemperatures Load (0.5ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_id` = '10.163536010800' ORDER BY temperatures.id DESC LIMIT 1
+  [1m[36mSQL (45.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.6ms)[0m  [1mdescribe `temperatures`[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `temperatures` (`probe_name`, `updated_at`, `value`, `probe_id`, `created_at`) VALUES ('Probe 2', '2012-01-25 11:28:04', 22.0625, '10.0A3436010800', '2012-01-25 11:28:04')
+  [1m[36mSQL (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `temperatures` (`probe_name`, `updated_at`, `value`, `probe_id`, `created_at`) VALUES ('Probe 1', '2012-01-25 11:28:05', 21.625, '10.163536010800', '2012-01-25 11:28:05')[0m
+  [1m[35mSQL (1.0ms)[0m  COMMIT
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.7ms)[0m  INSERT INTO `temperatures` (`probe_name`, `updated_at`, `value`, `probe_id`, `created_at`) VALUES ('Probe 3', '2012-01-25 11:28:06', 21.625, '10.4D9241010800', '2012-01-25 11:28:06')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mTemperatures Load (0.5ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_id` = '10.163536010800' ORDER BY temperatures.id DESC LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `temperatures` (`probe_name`, `updated_at`, `value`, `probe_id`, `created_at`) VALUES ('Probe 2', '2012-01-25 11:28:23', 22.0625, '10.0A3436010800', '2012-01-25 11:28:23')
+  [1m[36mSQL (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `temperatures` (`probe_name`, `updated_at`, `value`, `probe_id`, `created_at`) VALUES ('Probe 1', '2012-01-25 11:28:24', 21.625, '10.163536010800', '2012-01-25 11:28:24')[0m
+  [1m[35mSQL (1.1ms)[0m  COMMIT
+  [1m[36mSQL (0.8ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `temperatures` (`probe_name`, `updated_at`, `value`, `probe_id`, `created_at`) VALUES ('Probe 3', '2012-01-25 11:28:25', 21.625, '10.4D9241010800', '2012-01-25 11:28:25')
+  [1m[36mSQL (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mTemperatures Load (0.5ms)[0m  SELECT `temperatures`.* FROM `temperatures` WHERE `temperatures`.`probe_id` = '10.163536010800' ORDER BY temperatures.id DESC LIMIT 1

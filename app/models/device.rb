@@ -15,8 +15,9 @@ def read_device_type(id)
   read_device id, "type"
 end
 
-def send_synchronous
-   `#{CONFIG["ow"]["bin"]}/owwrite -s #{CONFIG["ow"]["server"]} /simultaneous 1`
+#only useful if we have a powered 1-wire bus, which we don't!
+def send_simultaneous_temperature
+   `#{CONFIG["ow"]["bin"]}/owwrite -s #{CONFIG["ow"]["server"]} /simultaneous/temperature 1`
 end
 
 def read_device(id,param)
