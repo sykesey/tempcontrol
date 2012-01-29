@@ -15,7 +15,12 @@
           "3A.E5FF05000000": {
             "type": ["Switch","InputSensor"],
             "name": "Switch 1",
-            "channels": ["PIO.A","PIO.B"]
+            "channels": ["PIO.A","PIO.B"],
+	    //refactor this - should go into the zone/heater rather than here!
+	    "pid": { "pv": 30,
+		     "pi": 0.0001,
+		     "pd": 60
+	           }
 	  }
 	 },
 	 "zones":
@@ -23,25 +28,26 @@
 		"hlt":
 		{
 			"sensor": "10.163536010800",
-			"manage": true,
-			"default_target_temp": 72,
+			"manage": false,
+			//"manage": true,
+			"target_temp": 80,
                         "heater": { "switch": "3A.E5FF05000000",
-                                    "channel": "PIO.B",
-                                    "hysterisis": 60,
-                                    "duty_cycle": 100
+                                    "channel": "PIO.B"
                                   }
-			//,"valves": ["mashtun"]
+			//no valves yet!
+			//,"valves": ["mashtun"] 
 		},
 		"mashtun":
 		{
-			"sensor": "10.0A3436010800",
+			"sensor": "10.4D9241010800",
 			"manage": false,
 			"default_target_temp": 65
+			// no valves yet!
 			//,"valves": ["kettle"]
 		},
 		"ambient":
 		{
-			"sensor": "10.4D9241010800",
+			"sensor": "10.0A3436010800",
 			"manage": false
 		}
 	 },

@@ -15,6 +15,8 @@ gem 'json'
 gem 'gnuplot'
 gem 'activesupport'
 gem 'hashie'
+gem "rb-pid-controller"
+gem "highline"
 
 group :development, :test, :cucumber do
 	gem 'cucumber'

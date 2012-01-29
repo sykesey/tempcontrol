@@ -12,29 +12,36 @@ y2 = []
 x3 = []
 y3 = []
 
-Temperatures.where(:probe_name => "Probe 1").limit(100).each do |row|
- x1 << row.tstamp.strftime("%d-%m-%Y-%H:%M")
- y1 << row.value
+how_many = 500
+offset = 450
+
+Temperatures.where(:probe_name => "Probe 1").order('created_at DESC').limit(how_many).offset(offset).each do |row|
+ next if row.value == 0 || row.value == 85
+ x1.unshift( row.created_at.strftime("%d-%m-%Y-%H:%M") )
+ y1.unshift( row.value )
 end
 
-Temperatures.where(:probe_name => "Probe 2").limit(100).each do |row|
- x2 << row.tstamp.strftime("%d-%m-%Y-%H:%M")
- y2 << row.value
+Temperatures.where(:probe_name => "Probe 2").order('created_at DESC').limit(how_many).offset(offset).each do |row|
+ next if row.value == 0 || row.value == 85
+ x2.unshift row.created_at.strftime("%d-%m-%Y-%H:%M")
+ y2.unshift row.value
 end
 
-#Temperatures.where(:probe_name => "Probe 3").limit(100).each do |row|
-# x3 << row.tstamp.strftime("%d-%m-%Y-%H:%M")
-# y3 << row.value
-#end
+Temperatures.where(:probe_name => "Probe 3").order('created_at DESC').limit(how_many).offset(offset).each do |row|
+ next if row.value == 0 || row.value == 85
+ x3.unshift row.created_at.strftime("%d-%m-%Y-%H:%M")
+ y3.unshift row.value
+end
 
 
 Gnuplot.open do |gp|
   Gnuplot::Plot.new( gp ) do |plot|
-  
+    plot.output "plot.png"
+    plot.terminal 'png'
     plot.title  "Yo"
     plot.ylabel "Temp"
     plot.xlabel "Time"
-    plot.xtics 3600
+    plot.xtics 1800
     plot.xdata "time"
     plot.timefmt '"%d-%m-%Y-%H:%M"'
     plot.format 'x "%d-%m-%Y-%H:%M"'
@@ -53,13 +60,13 @@ Gnuplot.open do |gp|
               ds2.linewidth = 1
               ds2.using = "1:2"
               ds2.title = "Probe 2"
+            },
+            Gnuplot::DataSet.new( [x3, y3] ) { |ds3|
+              ds3.with = "linespoints"
+              ds3.linewidth = 1
+              ds3.using = "1:2"
+              ds3.title = "Probe 3"
             }
- #           Gnuplot::DataSet.new( [x3, y3] ) { |ds3|
- #             ds3.with = "linespoints"
- #             ds3.linewidth = 1
- #             ds3.using = "1:2"
- #             ds3.title = "Probe 3"
- #           }
     ]
   end
 end

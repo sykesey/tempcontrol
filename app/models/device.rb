@@ -1,3 +1,5 @@
+require 'rb-pid-controller'
+
 
 def read_device_temperature(id)
   read_device id, "temperature"
@@ -15,21 +17,25 @@ def read_device_type(id)
   read_device id, "type"
 end
 
-#only useful if we have a powered 1-wire bus, which we don't!
+#only useful if we have a powered 1-wire bus, which we don't??
 def send_simultaneous_temperature
-   `#{CONFIG["ow"]["bin"]}/owwrite -s #{CONFIG["ow"]["server"]} /simultaneous/temperature 1`
+   `#{CONFIG["ow"]["bin"]}/owwrite -s #{CONFIG["ow"]["server"]} /simultaneous/temperature 1 2>/dev/null`
 end
 
 def read_device(id,param)
-  val = `#{CONFIG["ow"]["bin"]}/owread -s #{CONFIG["ow"]["server"]} /#{id}/#{param}`.gsub(/\s/,'')
+  val = `#{CONFIG["ow"]["bin"]}/owread -s #{CONFIG["ow"]["server"]} /#{id}/#{param} 2>/dev/null`.gsub(/\s/,'')
   return -1 if val.nil?
   puts "#{id}/#{param}: #{val}"  if CONFIG["debug"]
   return val
 end
 
 def write_device(id,param,value)
-  `#{CONFIG["ow"]["bin"]}/owwrite -s #{CONFIG["ow"]["server"]} /#{id}/#{param} #{value}`
-end 
+  `#{CONFIG["ow"]["bin"]}/owwrite -s #{CONFIG["ow"]["server"]} /#{id}/#{param} #{value} 2>/dev/null`
+end
+
+def get_alarms
+  `#{CONFIG["ow"]["bin"]}/owdir -s #{CONFIG["ow"]["server"]} /alarms 2>/dev/null`.split(/\n/)
+end
 
 class Device
   attr_accessor :name, :id
@@ -57,8 +63,16 @@ class Device::TempSensor < Device
   
   def temperature
     @temperature = read_device_temperature(@id)
-    warn "No temperature returned - is owserver running?" if @temperature == ""
+    #warn "No temperature returned - is owserver running?" if @temperature == ""
     return @temperature
+  end
+  
+  def set_temphigh(value)
+    write_device(@id,"temphigh",value)
+  end
+  
+  def set_templow(value)
+    write_device(@id,"templow",value)
   end
   
 end
@@ -74,7 +88,7 @@ class Device::Switch < Device
 end
 
 class Device::Switch::Channel < Device
-  attr_accessor :switch
+  attr_accessor :switch, :pidcontroller
   
   def initialize(id,name,switch)
     @id = id
